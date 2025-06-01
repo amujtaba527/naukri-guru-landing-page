@@ -7,8 +7,8 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2 animate-scale-in">
-            <div className="w-8 h-8 bg-naukri-green rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-200">
-              <span className="text-white font-bold text-sm">NG</span>
+            <div className="w-12 h-8 rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-200">
+              <img src="/public/Naukri گرو.png" alt="Naukri Guru Logo" className="w-full h-full object-cover" />
             </div>
             <span className="text-xl font-bold text-gray-900">Naukri Guru</span>
           </div>

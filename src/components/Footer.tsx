@@ -78,8 +78,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-naukri-amber rounded-lg flex items-center justify-center">
-                <span className="text-black font-bold text-sm">NG</span>
+              <div className="w-12 h-8 bg-white rounded-lg flex items-center justify-center">
+                <img src="/public/Naukri گرو.png" alt="Naukri Guru Logo" className="w-full h-full object-cover" />
               </div>
               <span className="text-xl font-bold">Naukri Guru</span>
             </div>
