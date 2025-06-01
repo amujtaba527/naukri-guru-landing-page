@@ -1,36 +1,60 @@
-
 import { Button } from '@/components/ui/button';
-
 const Footer = () => {
   const footerLinks = {
-    product: [
-      { name: "Features", href: "#features" },
-      { name: "How It Works", href: "#how-it-works" },
-      { name: "Pricing", href: "#pricing" },
-      { name: "API Documentation", href: "#" }
-    ],
-    company: [
-      { name: "About Us", href: "#" },
-      { name: "Careers", href: "#" },
-      { name: "Press", href: "#" },
-      { name: "Contact", href: "#" }
-    ],
-    resources: [
-      { name: "Blog", href: "#" },
-      { name: "Help Center", href: "#" },
-      { name: "Interview Tips", href: "#" },
-      { name: "Resume Templates", href: "#" }
-    ],
-    legal: [
-      { name: "Privacy Policy", href: "#" },
-      { name: "Terms of Service", href: "#" },
-      { name: "Cookie Policy", href: "#" },
-      { name: "GDPR", href: "#" }
-    ]
+    product: [{
+      name: "Features",
+      href: "#features"
+    }, {
+      name: "How It Works",
+      href: "#how-it-works"
+    }, {
+      name: "Pricing",
+      href: "#pricing"
+    }, {
+      name: "API Documentation",
+      href: "#"
+    }],
+    company: [{
+      name: "About Us",
+      href: "#"
+    }, {
+      name: "Careers",
+      href: "#"
+    }, {
+      name: "Press",
+      href: "#"
+    }, {
+      name: "Contact",
+      href: "#"
+    }],
+    resources: [{
+      name: "Blog",
+      href: "#"
+    }, {
+      name: "Help Center",
+      href: "#"
+    }, {
+      name: "Interview Tips",
+      href: "#"
+    }, {
+      name: "Resume Templates",
+      href: "#"
+    }],
+    legal: [{
+      name: "Privacy Policy",
+      href: "#"
+    }, {
+      name: "Terms of Service",
+      href: "#"
+    }, {
+      name: "Cookie Policy",
+      href: "#"
+    }, {
+      name: "GDPR",
+      href: "#"
+    }]
   };
-
-  return (
-    <footer className="bg-naukri-green text-white">
+  return <footer className="bg-naukri-green text-white">
       <div className="container mx-auto px-4 py-16">
         {/* CTA Section */}
         <div className="bg-naukri-green/80 rounded-2xl p-8 mb-16 text-center border border-white/10">
@@ -44,7 +68,7 @@ const Footer = () => {
             <Button className="bg-naukri-amber hover:bg-naukri-amber/90 text-black font-semibold px-8">
               Start Free Trial
             </Button>
-            <Button variant="outline" className="border-white text-white hover:bg-white hover:text-naukri-green">
+            <Button variant="outline" className="border-white bg-white text-naukri-green">
               Schedule Demo
             </Button>
           </div>
@@ -67,52 +91,44 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Product</h4>
             <ul className="space-y-2">
-              {footerLinks.product.map((link, index) => (
-                <li key={index}>
+              {footerLinks.product.map((link, index) => <li key={index}>
                   <a href={link.href} className="text-white/80 hover:text-naukri-amber transition-colors text-sm">
                     {link.name}
                   </a>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
           
           <div>
             <h4 className="font-semibold mb-4">Company</h4>
             <ul className="space-y-2">
-              {footerLinks.company.map((link, index) => (
-                <li key={index}>
+              {footerLinks.company.map((link, index) => <li key={index}>
                   <a href={link.href} className="text-white/80 hover:text-naukri-amber transition-colors text-sm">
                     {link.name}
                   </a>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
           
           <div>
             <h4 className="font-semibold mb-4">Resources</h4>
             <ul className="space-y-2">
-              {footerLinks.resources.map((link, index) => (
-                <li key={index}>
+              {footerLinks.resources.map((link, index) => <li key={index}>
                   <a href={link.href} className="text-white/80 hover:text-naukri-amber transition-colors text-sm">
                     {link.name}
                   </a>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
           
           <div>
             <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-2">
-              {footerLinks.legal.map((link, index) => (
-                <li key={index}>
+              {footerLinks.legal.map((link, index) => <li key={index}>
                   <a href={link.href} className="text-white/80 hover:text-naukri-amber transition-colors text-sm">
                     {link.name}
                   </a>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
         </div>
@@ -126,22 +142,14 @@ const Footer = () => {
             <div className="flex items-center gap-6">
               <span className="text-white/60 text-sm">Follow us:</span>
               <div className="flex gap-4">
-                {['LinkedIn', 'Twitter', 'Facebook'].map((social, index) => (
-                  <a 
-                    key={index}
-                    href="#" 
-                    className="text-white/80 hover:text-naukri-amber transition-colors text-sm"
-                  >
+                {['LinkedIn', 'Twitter', 'Facebook'].map((social, index) => <a key={index} href="#" className="text-white/80 hover:text-naukri-amber transition-colors text-sm">
                     {social}
-                  </a>
-                ))}
+                  </a>)}
               </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
