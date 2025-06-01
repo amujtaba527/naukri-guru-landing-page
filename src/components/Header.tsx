@@ -1,4 +1,4 @@
-
+import Logo from '../../public/Naukri گرو.png';
 import { Button } from '@/components/ui/button';
 
 const Header = () => {
@@ -8,7 +8,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2 animate-scale-in">
             <div className="w-12 h-8 rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-200">
-              <img src="/public/Naukri گرو.png" alt="Naukri Guru Logo" className="w-full h-full object-cover" />
+              <img src={Logo} alt="Naukri Guru Logo" className="w-full h-full object-cover" />
             </div>
             <span className="text-xl font-bold text-gray-900">Naukri Guru</span>
           </div>

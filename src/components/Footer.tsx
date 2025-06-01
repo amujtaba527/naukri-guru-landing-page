@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import Logo from '../../public/Naukri گرو.png';
 const Footer = () => {
   const footerLinks = {
     product: [{
@@ -79,7 +80,7 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-12 h-8 bg-white rounded-lg flex items-center justify-center">
-                <img src="/public/Naukri گرو.png" alt="Naukri Guru Logo" className="w-full h-full object-cover" />
+                <img src={Logo} alt="Naukri Guru Logo" className="w-full h-full object-cover" />
               </div>
               <span className="text-xl font-bold">Naukri Guru</span>
             </div>
