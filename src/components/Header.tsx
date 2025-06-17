@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 animate-fade-in">
+    <header className="sticky top-0 z-50 bg-naukri-beige/95 backdrop-blur-sm border-b border-gray-100 animate-fade-in">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2 animate-scale-in">

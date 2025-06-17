@@ -1,10 +1,9 @@
-
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Play } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="py-20 lg:py-28 bg-gradient-to-br from-white to-gray-50 overflow-hidden">
+    <section className="py-20 lg:py-28 bg-gradient-to-br from-naukri-beige to-gray-50 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">

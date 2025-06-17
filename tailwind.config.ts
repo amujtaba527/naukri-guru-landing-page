@@ -66,6 +66,7 @@ export default {
 				// Custom Naukri Guru colors
 				'naukri-green': '#007F5F',
 				'naukri-amber': '#FFB300',
+				'naukri-beige': '#F5F5DC',
 				'naukri-white': '#FFFFFF'
 			},
 			fontFamily: {

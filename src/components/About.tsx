@@ -1,4 +1,3 @@
-
 import { Users, Target, Award, Globe } from 'lucide-react';
 
 const About = () => {
@@ -36,7 +35,7 @@ const About = () => {
             {stats.map((stat, index) => (
               <div 
                 key={index}
-                className="bg-white p-6 rounded-xl border border-gray-100 text-center hover:shadow-lg transition-all duration-300 hover:scale-105"
+                className="bg-naukri-beige p-6 rounded-xl border border-gray-100 text-center hover:shadow-lg transition-all duration-300 hover:scale-105"
               >
                 <div className="w-12 h-12 bg-naukri-green/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <stat.icon className="h-6 w-6 text-naukri-green" />
@@ -48,7 +47,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="bg-white rounded-2xl p-8 lg:p-12 border border-gray-100 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+        <div className="bg-naukri-beige rounded-2xl p-8 lg:p-12 border border-gray-100 animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <div className="grid lg:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-naukri-green/10 rounded-full flex items-center justify-center mx-auto mb-4">

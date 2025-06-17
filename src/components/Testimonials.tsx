@@ -1,4 +1,3 @@
-
 import { Star } from 'lucide-react';
 
 const Testimonials = () => {
@@ -45,7 +44,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div 
               key={index} 
-              className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-500 animate-fade-in hover:scale-105 hover:-translate-y-2 group"
+              className="bg-naukri-beige rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-500 animate-fade-in hover:scale-105 hover:-translate-y-2 group"
               style={{ animationDelay: `${index * 0.15}s` }}
             >
               <div className="flex items-center gap-1 mb-4">
@@ -70,7 +69,7 @@ const Testimonials = () => {
         </div>
         
         <div className="text-center mt-12 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-          <div className="inline-flex items-center bg-white rounded-full px-6 py-3 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 hover:scale-105">
+          <div className="inline-flex items-center bg-naukri-beige rounded-full px-6 py-3 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 hover:scale-105">
             <div className="flex items-center gap-4">
               <div className="flex -space-x-2">
                 {['AG', 'KL', 'DM', 'RS'].map((initials, i) => (

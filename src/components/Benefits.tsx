@@ -1,10 +1,9 @@
-
 import { Button } from '@/components/ui/button';
 import { TrendingUp, Clock, Award, Users } from 'lucide-react';
 
 const Benefits = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-naukri-beige">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Employers Section */}
@@ -44,7 +43,7 @@ const Benefits = () => {
           
           {/* Job Seekers Section */}
           <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <div className="bg-white border-2 border-naukri-green rounded-2xl p-8 h-full hover:shadow-2xl transition-all duration-500 hover:scale-105 group">
+            <div className="bg-naukri-beige border-2 border-naukri-green rounded-2xl p-8 h-full hover:shadow-2xl transition-all duration-500 hover:scale-105 group">
               <div className="flex items-center gap-3 mb-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
                 <Award className="h-8 w-8 text-naukri-green group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="text-2xl font-bold text-gray-900">For Job Seekers</h3>
