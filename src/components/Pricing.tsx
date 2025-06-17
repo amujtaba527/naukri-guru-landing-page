@@ -53,7 +53,7 @@ const Pricing = () => {
   ];
 
   return (
-    <section id="pricing" className="py-20 bg-white">
+    <section id="pricing" className="py-20 bg-naukri-beige">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -68,7 +68,7 @@ const Pricing = () => {
           {plans.map((plan, index) => (
             <div 
               key={index} 
-              className={`relative bg-white rounded-2xl border-2 p-8 transition-all duration-500 hover:shadow-xl animate-fade-in group hover:-translate-y-2 ${
+              className={`relative bg-naukri-beige rounded-2xl border-2 p-8 transition-all duration-500 hover:shadow-xl animate-fade-in group hover:-translate-y-2 ${
                 plan.popular 
                   ? 'border-naukri-green shadow-lg scale-105 hover:scale-110' 
                   : 'border-gray-100 hover:border-naukri-green/30 hover:scale-105'
