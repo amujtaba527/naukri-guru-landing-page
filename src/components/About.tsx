@@ -1,23 +1,32 @@
+
 import { Users, Target, Award, Globe } from 'lucide-react';
+
 const About = () => {
-  const stats = [{
-    icon: Users,
-    value: "10,000+",
-    label: "Companies Trust Us"
-  }, {
-    icon: Target,
-    value: "500,000+",
-    label: "Successful Placements"
-  }, {
-    icon: Award,
-    value: "98%",
-    label: "Client Satisfaction"
-  }, {
-    icon: Globe,
-    value: "50+",
-    label: "Countries Served"
-  }];
-  return <section id="about" className="py-20 bg-[#f5f5dc]">
+  const stats = [
+    {
+      icon: Users,
+      value: "10,000+",
+      label: "Companies Trust Us"
+    },
+    {
+      icon: Target,
+      value: "500,000+",
+      label: "Successful Placements"
+    },
+    {
+      icon: Award,
+      value: "98%",
+      label: "Client Satisfaction"
+    },
+    {
+      icon: Globe,
+      value: "50+",
+      label: "Countries Served"
+    }
+  ];
+
+  return (
+    <section id="about" className="py-20 bg-naukri-beige">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -39,22 +48,20 @@ const About = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 gap-6 animate-fade-in" style={{
-          animationDelay: '0.2s'
-        }}>
-            {stats.map((stat, index) => <div key={index} className="bg-naukri-beige p-6 rounded-xl border border-gray-100 text-center hover:shadow-lg transition-all duration-300 hover:scale-105">
+          <div className="grid grid-cols-2 gap-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            {stats.map((stat, index) => (
+              <div key={index} className="bg-naukri-beige p-6 rounded-xl border border-gray-100 text-center hover:shadow-lg transition-all duration-300 hover:scale-105">
                 <div className="w-12 h-12 bg-naukri-green/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <stat.icon className="h-6 w-6 text-naukri-green" />
                 </div>
                 <div className="text-2xl font-bold text-naukri-green mb-2">{stat.value}</div>
                 <div className="text-sm text-gray-600">{stat.label}</div>
-              </div>)}
+              </div>
+            ))}
           </div>
         </div>
 
-        <div className="bg-naukri-beige rounded-2xl p-8 lg:p-12 border border-gray-100 animate-fade-in" style={{
-        animationDelay: '0.4s'
-      }}>
+        <div className="bg-naukri-beige rounded-2xl p-8 lg:p-12 border border-gray-100 animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <div className="grid lg:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-naukri-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -88,6 +95,8 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default About;
