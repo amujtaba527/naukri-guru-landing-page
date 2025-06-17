@@ -24,7 +24,7 @@ const Hero = () => {
                 Try for Free
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
               </Button>
-              <Button size="lg" variant="outline" className="border-naukri-green text-naukri-green hover:bg-naukri-green px-8 py-4 text-lg group transition-all duration-300 hover:scale-105 hover:shadow-lg text-[#f5f5dc]">
+              <Button size="lg" variant="outline" className="border-naukri-green text-naukri-green hover:bg-naukri-green px-8 py-4 text-lg group transition-all duration-300 hover:scale-105 hover:shadow-lg text-white ">
                 <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
                 Request a Demo
               </Button>
